@@ -35,7 +35,7 @@ PA_OUT = [0]*8
 PB_IN = [0]*8
 BO_Init_Value = 0
 for i in range(8):
-    PA_OUT[i] = builder.boolOut("PAOUT"+str(i),ZNAM="OFF", ONAM="ON", initial_value=BO_Init_Value, always_update=True,on_update=lambda v: PAOUT[i].write(v))
+    PA_OUT[i] = builder.boolOut("PAOUT"+str(i),ZNAM="OFF", ONAM="ON", initial_value=BO_Init_Value, always_update=True,on_update=PAOUT[i].write)
     PB_IN[i]  = builder.boolIn("PBIN"+str(i),  ZNAM="OFF", ONAM="ON", initial_value=PBIN[i].read())
 
 A_IN = [0]*6
