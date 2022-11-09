@@ -9,12 +9,12 @@ The objects include:
 - enable the readback of analog inputs and digital I/Os;
 - simplify the work in developing the drivers and the IOC database.
 
-To realize these objects, a solution of deploying the `pynq + pythonSoftIOC` looks 
-promising. By employing `pynq` module in python, the access to the GPIO readback/setting 
-can be done in a one-line python code, getting rid of the driver development 
-and the HDL programming. 
-This README introduces how to install `PYNQ` and configure the Arty-Z7 board 
-for network access, and install the `pythonSoftIOC`. 
+To achieve these objects, one solution is to deploy the `pynq + pythonSoftIOC`. 
+By employing `pynq` module in python, the access to the GPIO readback/setting 
+can be done in a one-line python code, so that one can get rid of the driver
+development and the HDL programming. 
+This README introduces how to install `PYNQ` (an linux enbeded ubuntu with python) 
+configure the Arty-Z7 board for network access, and install the `pythonSoftIOC`. 
 A demo python script is included, it creates a number of PV channels to read and set
 a series pin status.
 
@@ -104,9 +104,9 @@ in this case, use the
 ```
 to talk to the right serial port.
 
-### 1.3 acces the Ubuntu on Arty-Z7
+### 1.3 Access the Ubuntu on Arty-Z7
 In this example, the IP was not reconfigured, the default IP address is 
-192.168.2.99. It can be accessed with *ssh*. 
+`192.168.2.99` by default. It can be accessed with *ssh*. 
 The default *username* and *password* are *xilinx*.
 The default password of root is also *xilinx*.
 Create an *epics* directory under */home* using *root*
