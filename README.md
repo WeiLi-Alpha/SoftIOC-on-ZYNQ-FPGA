@@ -218,7 +218,7 @@ medm -x ArtyZ720_Main.adl
 ```
 and click on `Arty-Z720 AI_DIO` button. The panel looks like following:
 
-<img src="./Screenshot_ArtyZ720_AI_DIO.png" height="250"/>
+<img src="Docs/Screenshot_ArtyZ720_AI_DIO.png" height="250"/>
 
 ## 4. Compile EPICS base [optional]
 If you are interested in developing IOC using conventional method instead of using 
