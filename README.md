@@ -71,10 +71,10 @@ An example setting in one of the FPGA is as following
 ``````
 auto eth0
     iface eth0 inet static
-    address 10.236.57.197
+    address 10.XXX.XX.XXX
     netmask 255.255.255.0
-    gateway 10.236.57.1
-    dns-nameservers 152.3.70.100 8.8.8.8
+    gateway 10.XXX.XX.1
+    dns-nameservers 152.X.XX.XXX 8.8.8.8
 ``````
 
 #### 1.2.2 Configure nameserver
@@ -83,12 +83,12 @@ edit `emacs /etc/resolvconf/resolv.conf.d/head`, and add the nameservers in this
 nameserver 152.3.70.100
 nameserver 8.8.8.8
 ```
-where `152.3.70.100` is the name server at Duke and `8.8.8.8` is the name server of Google.
+where `152.X.XX.XXX` is the name server at Duke and `8.8.8.8` is the name server of Google.
 
 Another tempery change of nameserver is to edit the `/etc/resolv.conf` to enable the nameserver and search domains, 
 an example is shown as following:
 ```
-nameserver 152.3.70.100 8.8.8.8
+nameserver 152.X.XX.XXX 8.8.8.8
 options edns0 trust-ad
 search DOMAINS fel.duke.edu
 ```
