@@ -80,7 +80,7 @@ auto eth0
 #### 1.2.2 Configure nameserver
 edit `emacs /etc/resolvconf/resolv.conf.d/head`, and add the nameservers in this file.
 ```
-nameserver 152.3.70.100
+nameserver 152.X.XX.XXX
 nameserver 8.8.8.8
 ```
 where `152.X.XX.XXX` is the name server at Duke and `8.8.8.8` is the name server of Google.
